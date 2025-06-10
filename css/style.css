@@ -1,0 +1,129 @@
+/* Default (before scroll) - transparent */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+/* Hide the dropdown menu by default */
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    list-style: none;
+    min-width: 200px;
+}
+
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style for dropdown items */
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+.dropdown {
+    position: relative;
+}
+
+/* Initially hide the paragraph and position it off to the right */
+.service-card .content p {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+/* On hover or active class, slide in from right */
+.service-card.hovered .content p,
+.service-card:hover .content p {
+    max-height: 150px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ============================================================== 
+    # Fun Fact
+=================================================================== */
+.fun-fact .counter {
+	display: flex;
+	align-items: center;
+}
+
+
+.funfact-style-one-item .fun-fact::after {
+	position: absolute;
+	right: 0px;
+	bottom: 0;
+	content: "";
+	top: 0;
+	width: 30px;
+	border-right: 1px solid #dddddd;
+	border-top-right-radius: 30px;
+}
+
+.funfact-style-one-item .fun-fact::before {
+	position: absolute;
+	right: -29px;
+	bottom: 0;
+	content: "";
+	width: 30px;
+	border-left: 1px solid #dddddd;
+	top: 0;
+	border-top-left-radius: 30px;
+	z-index: -1;
+}
+
+.funfact-style-one-item:last-child .fun-fact::before {
+	display: none;
+}
+
+.funfact-style-one-item:first-child {
+	border-bottom-left-radius: 0;
+}
+
+.funfact-style-one-item .fun-fact .counter {
+	justify-content: center;
+	font-size: 70px;
+	line-height: 1;
+	color: var(--color-heading);
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.funfact-style-one-item .fun-fact span.medium {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+
+    .fade {
+        opacity: 0;
+        transition: all 0.8s ease;
+    }
+
+    .fade.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
