@@ -11,7 +11,37 @@
             navbar.style.boxShadow = "none";
         }
     });
-    
+
+ document.addEventListener("DOMContentLoaded", function () {
+   const sidebar = document.getElementById('mobileSidenav');
+  const overlay = document.getElementById('mobileNavOverlay');
+  const openBtn = document.getElementById('mobileToggleBtn');
+  const closeBtn = document.getElementById('closeMobileNav');
+  const dropdownToggle = document.getElementById('servicesToggle');
+  const dropdownMenu = document.getElementById('servicesDropdownMobile');
+
+  openBtn.addEventListener('click', () => {
+    sidebar.classList.add('show');
+    overlay.classList.add('show');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('show');
+    overlay.classList.remove('show');
+  });
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('show');
+    overlay.classList.remove('show');
+  });
+
+  dropdownToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownMenu.classList.toggle('show');
+  });
+  });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
       duration: 500,       // animation duration in ms
