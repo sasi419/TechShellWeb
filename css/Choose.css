@@ -1,0 +1,216 @@
+/* ========================
+   Why Choose Us Section
+======================== */
+
+.partner-style-one-area {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.default-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.text-light {
+  color: var(--white);
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.bg-dark p {
+  color: #cccccc;
+  line-height: 2;
+}
+
+.brand-style-one-items {
+  background: #273545;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.brand-one img {
+  height: 35px;
+}
+
+/* ========================
+   Thumb Image Styling
+======================== */
+
+.thumb-style-three {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.thumb-style-three::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 500px;
+  width: 500px;
+  background: #104cba;
+  border-radius: 50%;
+  filter: blur(70px);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.thumb-style-three img {
+  width: auto;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.thumb-style-three .circle-text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 280px;
+  width: 280px;
+  margin-top: -160px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.thumb-style-three .circle-text a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
+}
+
+/* ========================
+   Title
+======================== */
+
+.title {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+/* ========================
+   List Style Four
+======================== */
+
+ul.list-sytle-four {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+ul.list-sytle-four li {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+}
+
+ul.list-sytle-four li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 30px;
+  padding-left: 0;
+}
+
+ul.list-sytle-four li:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 30px;
+  padding-right: 0;
+}
+
+ul.list-sytle-four li:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 64px;
+  width: 50px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 30px;
+}
+
+ul.list-sytle-four li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 65px;
+  bottom: 0;
+  width: 50px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 30px;
+}
+
+/* ========================
+   Font Awesome Icon Adjust
+======================== */
+
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+i::before {
+  line-height: inherit !important;
+}
+
+/* ========================
+   Responsive Design
+======================== */
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .brand-style-one-items {
+    padding: 30px;
+  }
+
+  ul.list-sytle-four {
+    grid-template-columns: 1fr;
+  }
+
+  ul.list-sytle-four li:first-child,
+  ul.list-sytle-four li:nth-child(2) {
+    border: none;
+    padding: 20px 15px;
+  }
+
+  ul.list-sytle-four li::after {
+    display: none !important;
+  }
+
+  .thumb-style-three::after {
+    height: 300px;
+    width: 300px;
+  }
+
+  .thumb-style-three .circle-text {
+    height: 180px;
+    width: 180px;
+    margin-top: -100px;
+  }
+
+  .thumb-style-three .circle-text a {
+    font-size: 30px;
+  }
+
+  .default-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
