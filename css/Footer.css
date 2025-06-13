@@ -123,11 +123,15 @@ ul.contact-address li h4 {
   color: #cccccc;
 }
 a {
-    outline: none;
-    text-decoration: none;
     color: var(--color-heading);
 }
-
+a, .btn, button {
+    transition: all 0.35s ease-in-out;
+    outline: none;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 26px;
+}
 /* Footer Bottom Links */
 .footer-bottom .link-list {
   display: flex;
@@ -145,21 +149,26 @@ ul.link-list li a:hover {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-/* Responsive Adjustments for Mobile */
+/* Responsive Footer Adjustments for Mobile */
 @media (max-width: 768px) {
   .footer-bottom .text-end {
     text-align: left !important;
     margin-top: 10px;
   }
+
   .footer-bottom .link-list {
     justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   .f-item.address {
     padding-right: 0;
     margin-bottom: 30px;
   }
+
+  /* Hide decorative elements for mobile */
   .bg-gray .f-item.address::before,
   .f-item.address::after {
     display: none;
@@ -170,6 +179,23 @@ ul.link-list li a:hover {
   }
 
   ul.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  ul.footer-social li {
+    margin-right: 0;
+  }
+
+  ul.contact-address li {
+    margin-bottom: 20px;
+  }
+
+  .default-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }

@@ -209,3 +209,259 @@ ul.list-style-one li::after {
     background: var(--bg-gray);
     border-bottom-right-radius: 10px;
 }
+
+/* Mobile View: About & Features Section */
+@media (max-width: 767px) {
+
+  /* === ABOUT SECTION === */
+  .about-style-two-area {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .about-style-two-area h2.title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .about-style-two-area p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .about-style-two-thumb .thumb {
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  .about-style-two-thumb .thumb img {
+    border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+  }
+
+  .about-style-two-thumb .thumb::after {
+    display: none;
+  }
+
+  .about-style-two-thumb .shape-card {
+    position: static;
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    background: none;
+  }
+
+  .about-style-two-thumb .shape-card h4 {
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  /* === FEATURES SECTION === */
+  .feature-style-one-area {
+    position: relative;
+    top: 0;
+    margin: 0;
+  }
+
+  .feature-style-one-info {
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .feature-style-one-info .fun-fact .counter {
+    font-size: 50px;
+    line-height: 1.2;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .feature-style-one-info h3 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  ul.list-style-one {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  ul.list-style-one li {
+    font-size: 14px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* Features Cards: Stack Layout for Mobile */
+  .feature-style-one-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+
+  .feature-style-one-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .feature-style-one-item:last-child {
+    border-bottom: none;
+  }
+
+  .feature-style-one-item .icon img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .feature-style-one-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .feature-style-one-item p {
+    font-size: 14px;
+  }
+
+  .feature-style-one-cards .path,
+  .feature-style-one-info .path {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* === ABOUT SECTION === */
+  .about-style-two-area {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .about-style-two-area h2.title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .about-style-two-area p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .about-style-two-thumb .thumb {
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  .about-style-two-thumb .thumb img {
+    border-radius: 50%;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about-style-two-thumb .thumb::after {
+    display: none;
+  }
+
+  .about-style-two-thumb .shape-card {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background: none;
+  }
+
+  .about-style-two-thumb .shape-card h4 {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* === FEATURES SECTION === */
+  .feature-style-one-area {
+    top: 0;
+    margin: 0;
+  }
+
+  .feature-style-one-info {
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .feature-style-one-info .fun-fact .counter {
+    font-size: 48px;
+    line-height: 1.2;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .feature-style-one-info h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+
+  ul.list-style-one {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  ul.list-style-one li {
+    font-size: 14px;
+    padding-left: 28px;
+    margin-bottom: 10px;
+  }
+
+  ul.list-style-one li::after {
+    height: 16px;
+    width: 16px;
+    background-size: contain;
+  }
+
+  .feature-style-one-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+
+  .feature-style-one-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .feature-style-one-item:last-child {
+    border-bottom: none;
+  }
+
+  .feature-style-one-item .icon img {
+    height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .feature-style-one-item h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+
+  .feature-style-one-item p {
+    font-size: 13px;
+    color: #cccccc;
+  }
+
+  .feature-style-one-info .path,
+  .feature-style-one-cards .path {
+    display: none;
+  }
+}
+
