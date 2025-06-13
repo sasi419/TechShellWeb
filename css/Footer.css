@@ -149,6 +149,13 @@ ul.link-list li a:hover {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.text-light a {
+    color: var(--white);
+}
+ul.link-list li a {
+    font-weight: 400;
+    color: #cccccc;
+}
 /* Responsive Footer Adjustments for Mobile */
 @media (max-width: 768px) {
   .footer-bottom .text-end {

@@ -199,4 +199,8 @@ header {
     left: 0;
     z-index: 1030;
 }
-
+img {
+    border: none;
+    outline: none;
+    max-width: 100%;
+}
