@@ -122,9 +122,10 @@ ul.contact-address li h4 {
 .bg-dark p {
   color: #cccccc;
 }
-.text-light h2,
-.text-light a {
-  color: var(--white);
+a {
+    outline: none;
+    text-decoration: none;
+    color: var(--color-heading);
 }
 
 /* Footer Bottom Links */
@@ -140,7 +141,11 @@ ul.link-list li a:hover {
   color: var(--color-primary);
 }
 
-/* ✅ Responsive Adjustments for Mobile */
+.default-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+/* Responsive Adjustments for Mobile */
 @media (max-width: 768px) {
   .footer-bottom .text-end {
     text-align: left !important;
