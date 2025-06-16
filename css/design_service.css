@@ -1,0 +1,113 @@
+/* ========== BASE STYLES ========== */
+.bg-cover {
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.banner-style-six-item {
+  padding-top: 200px;
+  padding-bottom: 180px;
+}
+
+.split-text {
+  overflow: hidden;
+  position: relative;
+}
+
+.split-text .line {
+  overflow: hidden;
+}
+
+.banner-style-six-item h2 {
+  font-size: 180px;
+  text-transform: uppercase;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.banner-style-six-item h2 strong {
+  text-align: right;
+  float: right;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: var(--font-heading);
+  letter-spacing: 0;
+  margin: 0 0 15px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.card-style-one {
+  max-width: 400px;
+  float: right;
+}
+
+.card-style-one p {
+  font-weight: 600;
+}
+
+p {
+  color: var(--color-paragraph);
+  margin: 0 0 25px;
+  text-transform: none;
+  font-family: var(--font-default);
+}
+
+/* ========== MOBILE VIEW ADJUSTMENTS ========== */
+@media (max-width: 767.98px) {
+  .banner-style-six-item {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .banner-style-six-item h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    float: none;
+    text-align: center;
+  }
+
+  .banner-style-six-item h2 strong {
+    float: none;
+    text-align: center;
+    display: block;
+  }
+
+  .split-text {
+    padding: 0 15px;
+  }
+
+  .card-style-one {
+    max-width: 100%;
+    float: none;
+    margin: 30px auto 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .card-style-one p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,133 @@
+.site-heading .title {
+  margin-bottom: 0;
+}
+.title {
+  font-weight: 600;
+  font-size: 50px;
+}
+h2 {
+  color: var(--color-heading);
+  line-height: 1.2;
+  font-family: var(--font-heading);
+  letter-spacing: 0;
+  margin: 0 0 25px;
+}
+.default-padding.bottom-less {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.default-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.default-padding,
+.default-padding-top,
+.default-padding-bottom,
+.default-padding-mx {
+  position: relative;
+}
+.bg-gray-secondary {
+  background: var(--bg-gray-secondary);
+}
+.bg-cover {
+  background-position: center center !important;
+  background-size: cover !important;
+}
+.parallax-area::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  background: #d8e7ef;
+  content: "";
+  z-index: -1;
+}
+.services-style-three-item img {
+  height: 80px;
+  margin-bottom: 80px;
+}
+.services-style-three-item {
+  padding: 60px 45px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 15px 60px -10px rgb(109 117 143 / 33%);
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.item-title h4 {
+  color: var(--color-heading);
+  line-height: 1.2;
+  font-family: var(--font-heading);
+  letter-spacing: 0;
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+.thumb-style-one img {
+  border-radius: 10px 10px 0 10px;
+}
+p {
+  color: var(--color-paragraph);
+  margin: 0 0 25px;
+  text-transform: none;
+  font-weight: 400;
+  font-family: var(--font-default);
+  line-height: 30px;
+}
+.pl-50 {
+  padding-left: 50px;
+}
+
+/* -----------------------
+   Mobile View Adjustments
+-------------------------- */
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .default-padding,
+  .default-padding.bottom-less {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .pl-50 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .services-style-three-item {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .services-style-three-item img {
+    height: 60px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    line-height: 26px;
+    font-size: 15px;
+  }
+
+  .item-title h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .thumb-style-one img {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+}

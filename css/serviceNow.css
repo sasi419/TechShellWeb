@@ -1,0 +1,116 @@
+/* ========== PARALLAX AREA STYLING ========== */
+.parallax-area {
+  padding-top: 200px;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.parallax-area > img {
+  position: absolute;
+  left: 0;
+  bottom: 120px;
+  object-fit: contain;
+  object-position: left;
+  height: 60%;
+  max-width: 100%;
+}
+
+img {
+  border: none;
+  outline: none;
+  max-width: 100%;
+}
+
+.parallax-area .shape {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parallax-area .shape img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  height: 100%;
+}
+
+/* ========== CIRCLE PROGRESS AREA ========== */
+.circle-progress-style-two {
+  background: var(--white);
+  padding: 80px;
+  height: auto;
+  position: relative;
+  z-index: 9;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0px 15px 60px -10px rgb(109 117 143 / 33%);
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+/* ========== CIRCLE TEXT CARD ========== */
+.circle-text-card {
+  position: relative;
+  border: 1px solid;
+  height: 240px;
+  width: 240px;
+  margin: auto auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-gray);
+}
+
+.circle-text-card a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-primary);
+  font-size: 50px;
+}
+
+/* ========== RESPONSIVE FOR MOBILE ========== */
+@media (max-width: 767.98px) {
+  .parallax-area {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-position: center center;
+  }
+
+  .parallax-area > img {
+    height: 40%;
+    bottom: 60px;
+    object-position: center;
+  }
+
+  .circle-progress-style-two {
+    padding: 30px 20px;
+    margin-bottom: -30px;
+    box-shadow: 0px 10px 30px -10px rgb(109 117 143 / 25%);
+  }
+
+  .circle-text-card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .circle-text-card a {
+    font-size: 36px;
+    -webkit-text-stroke: 0.8px var(--color-primary);
+  }
+
+  .parallax-area .shape img {
+    object-position: center;
+  }
+}
